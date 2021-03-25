@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" > 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Socially Distant Simon</h1>
+    
+    <p>
+      Hello and welcome to Socially Distant Simon! 
+      To play the game,
+      repeat the pattern you see and hear by pressing the buttons. Beware, the game will get harder and you only have three chances to catch up to Simon. Good luck!
+    </p>
+
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">
+      Stop
+    </button>
+    
+    <div id="gameButtonArea">     
+      <button id="button1" onmousedown="startTone(1); displayPic('cat');" onmouseup="stopTone();hidePic('cat')"  onclick = "guess(1)"> 
+        <img id="cat" src="https://cdn.glitch.com/8974c0e0-dcd7-40c8-8d18-8bc4ad56775b%2Fcat.png?v=1616618939547" width="180" height="180" style="visibility:hidden">
+      </button>
+      
+      <button id="button2" onmousedown="startTone(2); displayPic('cow');" onmouseup="stopTone();hidePic('cow')" onclick = "guess(2)"> 
+        <img id="cow" src= "https://cdn.glitch.com/8974c0e0-dcd7-40c8-8d18-8bc4ad56775b%2Fcow.png?v=1616618939548" width="180" height="180" style="visibility:hidden">
+      </button>
+      
+      <button id="button3" onmousedown="startTone(3); displayPic('pig');" onmouseup="stopTone();hidePic('pig')" onclick = "guess(3)"> 
+        <img id="pig" src="https://cdn.glitch.com/8974c0e0-dcd7-40c8-8d18-8bc4ad56775b%2Fpig.png?v=1616618939548" width="180" height="180" style="visibility:hidden">
+      </button>
+      
+      <button id="button4" onmousedown="startTone(4); displayPic('dog');" onmouseup="stopTone();hidePic('dog')" onclick = "guess(4)">  
+        <img id ="dog" src="https://cdn.glitch.com/8974c0e0-dcd7-40c8-8d18-8bc4ad56775b%2Fdog.png?v=1616618939548" width="180" height="180" style="visibility:hidden">
+      </button>
+      
+      <button id="button5" onmousedown="startTone(5); displayPic('elephant');" onmouseup="stopTone();hidePic('elephant')" onclick = "guess(5)">  
+        <img id="elephant" src="https://cdn.glitch.com/8974c0e0-dcd7-40c8-8d18-8bc4ad56775b%2Felephant.png?v=1616618939548" width="180" height="180" style="visibility:hidden">
+      </button>
+      
+      <button id="button6" onmousedown="startTone(6); displayPic('lion');" onmouseup="stopTone();hidePic('lion')" onclick = "guess(6)">  
+        <img id="lion" src="https://cdn.glitch.com/8974c0e0-dcd7-40c8-8d18-8bc4ad56775b%2Flion.png?v=1616618939803" width="180" height="180" style="visibility:hidden">
+      </button>
+    </div>
+    
+  
+  </body>
+</html>
